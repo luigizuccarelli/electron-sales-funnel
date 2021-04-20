@@ -1,0 +1,483 @@
+{
+	"tabs": [
+		{
+			"name": "Designer",
+			"linker": "designer-ssu",
+			"id": "1576075900139",
+			"index": 0
+		}
+	],
+	"components": [
+		{
+			"id": "1582277687232",
+			"component": "template",
+			"tab": "1576075900139",
+			"name": "20",
+			"reference": "Mail",
+			"x": 23,
+			"y": 193,
+			"connections": {
+				"0": [
+					{
+						"index": "0",
+						"id": "1582277790996"
+					}
+				]
+			},
+			"disabledio": {
+				"input": [],
+				"output": []
+			},
+			"state": {
+				"text": "",
+				"color": "gray"
+			},
+			"color": "#37BC9B",
+			"notes": "",
+			"options": {
+				"template": "{\n\t\"output\": \"mail.html\",\n\t\"content\": \"content.json\",\n\t\"custom\": \"abc\",\n\t\"pagename\": \"mail\",\n\t\"utm_source\": \"mail\",\n\t\"title\": \"emailcampaign\",\n\t\"pagetype\": \"origin\"\n}"
+			}
+		},
+		{
+			"id": "1582277789887",
+			"component": "template",
+			"tab": "1576075900139",
+			"name": "9",
+			"reference": "DownsellPage",
+			"x": 1031,
+			"y": 199,
+			"connections": {
+				"0": [
+					{
+						"index": "0",
+						"id": "1585724784117"
+					}
+				]
+			},
+			"disabledio": {
+				"input": [],
+				"output": []
+			},
+			"state": {
+				"text": "",
+				"color": "gray"
+			},
+			"color": "#37BC9B",
+			"notes": "",
+			"options": {
+				"template": "{\n\t\"output\": \"downsell.html\",\n\t\"content\": \"downsell.json\",\n\t\"custom\": \"downsell\",\n\t\"pagename\": \"downsell\",\n\t\"title\": \"downsellpage\",\n\t\"pagetype\": \"sales\"\n\t\n}"
+			}
+		},
+		{
+			"id": "1582277790970",
+			"component": "template",
+			"tab": "1576075900139",
+			"name": "9",
+			"reference": "UpsellPage",
+			"x": 794,
+			"y": 208,
+			"connections": {
+				"0": [
+					{
+						"index": "0",
+						"id": "1582277789887"
+					}
+				]
+			},
+			"disabledio": {
+				"input": [],
+				"output": []
+			},
+			"state": {
+				"text": "",
+				"color": "gray"
+			},
+			"color": "#37BC9B",
+			"notes": "",
+			"options": {
+				"template": "{\n\t\"output\": \"upsell.html\",\n\t\"content\": \"upsell.json\",\n\t\"custom\": \"upsell\",\n\t\"pagename\": \"upsell\",\n\t\"title\": \"upsellpage\",\n\t\"pagetype\": \"sales\"\n\t\n}"
+			}
+		},
+		{
+			"id": "1582277790985",
+			"component": "template",
+			"tab": "1576075900139",
+			"name": "20",
+			"reference": "Google",
+			"x": 19,
+			"y": 337,
+			"connections": {
+				"0": [
+					{
+						"index": "0",
+						"id": "1582277790996"
+					}
+				]
+			},
+			"disabledio": {
+				"input": [],
+				"output": []
+			},
+			"state": {
+				"text": "",
+				"color": "gray"
+			},
+			"color": "#37BC9B",
+			"notes": "",
+			"options": {
+				"template": "{\n\t\"output\": \"google.html\",\n\t\"content\": \"content.json\",\n\t\"custom\": \"google-ad\",\n\t\"pagename\": \"google\",\n\t\"pagetype\": \"origin\",\n\t\"title\": \"google-ad\",\n\t\"utm_source\": \"google\"\n}"
+			}
+		},
+		{
+			"id": "1582277790996",
+			"component": "template",
+			"tab": "1576075900139",
+			"name": "1",
+			"reference": "LandingPage",
+			"x": 291,
+			"y": 267,
+			"connections": {
+				"0": [
+					{
+						"index": "0",
+						"id": "1582277791005"
+					}
+				]
+			},
+			"disabledio": {
+				"input": [],
+				"output": []
+			},
+			"state": {
+				"text": "",
+				"color": "gray"
+			},
+			"color": "#37BC9B",
+			"notes": "",
+			"options": {
+				"template": "{\n\t\"output\": \"landing.html\",\n\t\"content\": \"content.json\",\n\t\"custom\": \"landing\",\n\t\"pagename\": \"promo\",\n\t\"title\": \"promopage\",\n\t\"pagetype\": \"landingpage\"\n\n}"
+			}
+		},
+		{
+			"id": "1582277791005",
+			"component": "template",
+			"tab": "1576075900139",
+			"name": "22",
+			"reference": "OrderPage",
+			"x": 546,
+			"y": 318,
+			"connections": {
+				"0": [
+					{
+						"index": "0",
+						"id": "1585724784117"
+					},
+					{
+						"index": "0",
+						"id": "1582277790970"
+					}
+				]
+			},
+			"disabledio": {
+				"input": [],
+				"output": []
+			},
+			"state": {
+				"text": "",
+				"color": "gray"
+			},
+			"color": "#37BC9B",
+			"notes": "",
+			"options": {
+				"template": "{\n\t\"output\": \"order.html\",\n\t\"content\": \"content.json\",\n\t\"custom\": \"order\",\n\t\"pagename\": \"order\",\n\t\"title\": \"orderform\",\n\t\"pagetype\": \"orderform\"\n\n}"
+			}
+		},
+		{
+			"id": "1582318184605",
+			"component": "template",
+			"tab": "1576075900139",
+			"name": "20",
+			"reference": "Twitter",
+			"x": 20,
+			"y": 475,
+			"connections": {
+				"0": [
+					{
+						"index": "0",
+						"id": "1582277790996"
+					}
+				]
+			},
+			"disabledio": {
+				"input": [],
+				"output": []
+			},
+			"state": {
+				"text": "",
+				"color": "gray"
+			},
+			"color": "#37BC9B",
+			"notes": "",
+			"options": {
+				"template": "{\n\t\"output\": \"twitter.html\",\n\t\"content\": \"content.json\",\n\t\"custom\": \"abc\",\n\t\"pagename\": \"twitter\",\n\t\"pagetype\": \"origin\",\n\t\"title\": \"twittwer\",\n\t\"utm_source\": \"twitter\"\n}"
+			}
+		},
+		{
+			"id": "1585724784117",
+			"component": "template",
+			"tab": "1576075900139",
+			"name": "11",
+			"reference": "ConfirmationPage",
+			"x": 1321,
+			"y": 365,
+			"connections": {
+				"0": [
+					{
+						"index": "0",
+						"id": "1589707161488"
+					}
+				]
+			},
+			"disabledio": {
+				"input": [],
+				"output": []
+			},
+			"state": {
+				"text": "",
+				"color": "gray"
+			},
+			"color": "#37BC9B",
+			"notes": "",
+			"options": {
+				"template": "{\n\t\"custom\": \"abc\",\n\t\"pagename\": \"confirm\",\n\t\"pagetype\": \"confirm\",\n\t\"output\": \"confirm.html\",\n\t\"title\": \"confirmation\",\n\t\"content\": \"content.json\"\n}"
+			}
+		},
+		{
+			"id": "1589707161488",
+			"component": "template",
+			"tab": "1576075900139",
+			"name": "23",
+			"reference": "End",
+			"x": 1594,
+			"y": 264,
+			"connections": {},
+			"disabledio": {
+				"input": [],
+				"output": []
+			},
+			"state": {
+				"text": "",
+				"color": "gray"
+			},
+			"color": "#37BC9B",
+			"notes": "",
+			"options": {
+				"template": "{\n\t\"custom\": \"abc\",\n\t\"pagename\": \"end\",\n\t\"pagetype\": \"end\",\n\t\"output\": \"end.html\",\n\t\"title\": \"end\",\n\t\"content\": \"end.json\"\n}"
+			}
+		},
+		{
+			"id": "1581951164124",
+			"component": "comment",
+			"tab": "1576075900139",
+			"name": "Pilot",
+			"reference": "utm_campaign",
+			"x": 659,
+			"y": 17,
+			"connections": {},
+			"disabledio": {
+				"input": [],
+				"output": []
+			},
+			"state": {
+				"text": "",
+				"color": "gray"
+			},
+			"color": "#704cff",
+			"notes": "",
+			"options": {}
+		},
+		{
+			"id": "1582198926673",
+			"component": "comment",
+			"tab": "1576075900139",
+			"name": "https://webapp-256e5.web.app/",
+			"reference": "base_url",
+			"x": 51,
+			"y": 18,
+			"connections": {},
+			"disabledio": {
+				"input": [],
+				"output": []
+			},
+			"state": {
+				"text": "",
+				"color": "gray"
+			},
+			"color": "#8C42F6",
+			"notes": "",
+			"options": {}
+		},
+		{
+			"id": "1585649366103",
+			"component": "comment",
+			"tab": "1576075900139",
+			"name": "AdvariableGoogle-A1",
+			"reference": "utm_content",
+			"x": 1082,
+			"y": 17,
+			"connections": {},
+			"disabledio": {
+				"input": [],
+				"output": []
+			},
+			"state": {
+				"text": "",
+				"color": "gray"
+			},
+			"color": "#E73323",
+			"notes": "",
+			"options": {}
+		},
+		{
+			"id": "1585657800894",
+			"component": "comment",
+			"tab": "1576075900139",
+			"name": "Acme.com",
+			"reference": "market-group",
+			"x": 400,
+			"y": 18,
+			"connections": {},
+			"disabledio": {
+				"input": [],
+				"output": []
+			},
+			"state": {
+				"text": "",
+				"color": "gray"
+			},
+			"color": "#8C42F6",
+			"notes": "",
+			"options": {}
+		},
+		{
+			"id": "1585676156772",
+			"component": "comment",
+			"tab": "1576075900139",
+			"name": "link",
+			"reference": "utm_medium",
+			"x": 878,
+			"y": 18,
+			"connections": {},
+			"disabledio": {
+				"input": [],
+				"output": []
+			},
+			"state": {
+				"text": "",
+				"color": "gray"
+			},
+			"color": "#704cff",
+			"notes": "",
+			"options": {}
+		},
+		{
+			"id": "1618168457755",
+			"component": "httproute",
+			"tab": "1576075900139",
+			"name": "HTTP Route",
+			"x": 121,
+			"y": 675,
+			"connections": {
+				"0": [
+					{
+						"index": "0",
+						"id": "1618168462591"
+					}
+				]
+			},
+			"disabledio": {
+				"input": [],
+				"output": []
+			},
+			"state": {
+				"text": "Listening",
+				"color": "green"
+			},
+			"color": "#5D9CEC",
+			"notes": "### Configuration\n\n- __GET /api/reload__\n- flags: undefined\n- maximum request data length: __5 kB__\n- empty response: __true__\n- cache policy: __no cache__",
+			"cloning": false,
+			"options": {
+				"timeout": 5,
+				"cachepolicy": 0,
+				"cacheexpire": "",
+				"size": 5,
+				"url": "/api/reload",
+				"method": "GET",
+				"emptyresponse": true,
+				"flags": [
+					5000,
+					"id:1618168457755",
+					"get"
+				]
+			}
+		},
+		{
+			"id": "1618168462591",
+			"component": "function",
+			"tab": "1576075900139",
+			"name": "Function",
+			"x": 391,
+			"y": 646,
+			"connections": {
+				"0": [
+					{
+						"index": "0",
+						"id": "1618168484468"
+					}
+				]
+			},
+			"disabledio": {
+				"input": [],
+				"output": []
+			},
+			"state": {
+				"text": "",
+				"color": "gray"
+			},
+			"color": "#656D78",
+			"notes": "",
+			"options": {
+				"code": "FLOW.reload();\nsend('reloaded!');",
+				"outputs": 1
+			}
+		},
+		{
+			"id": "1618168484468",
+			"component": "debug",
+			"tab": "1576075900139",
+			"name": "Debug",
+			"x": 624,
+			"y": 704,
+			"connections": {},
+			"disabledio": {
+				"input": [],
+				"output": []
+			},
+			"state": {
+				"text": "Enabled",
+				"color": "gray"
+			},
+			"color": "#967ADC",
+			"notes": "",
+			"options": {
+				"type": "data",
+				"repository": false,
+				"enabled": true
+			}
+		}
+	],
+	"variables": "",
+	"panel": "debug",
+	"url": "http://127.0.0.1:8000/#designer-ssu",
+	"created": "2021-04-11T19:16:39.725Z"
+}
