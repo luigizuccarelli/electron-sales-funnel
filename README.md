@@ -1,10 +1,8 @@
-# iot-dashboard
+# sales-funnel-dashboard
 
 ## An electron based front end application
 
-### Front end dashboard for dev iot channels
-
-* update config.json to match your dev env
+### Front end dashboard for sales funnel designer
 
 ### Installation and launch
 
